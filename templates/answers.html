@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>All answers</h1>
+<table class="table table-striped" border="4">
+    <tr>
+        <th>Answers</th>
+    </tr>
+
+    {% for answer in answers %}
+    <tr>
+        <td>{{answer.answer}}</td>
+    </tr>
+    {% endfor %}    
+</table>
+{% endblock content %}
